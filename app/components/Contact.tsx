@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[80vh] sm:min-h-screen flex items-center px-6 sm:px-12 max-w-4xl mx-auto bg-white scroll-mt-16">
+    <section id="contact" className="py-20 sm:py-28 px-6 sm:px-12 max-w-4xl mx-auto bg-white scroll-mt-16">
       <div className="w-full space-y-8">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
           Get In <span className="text-blue-600">Touch</span>

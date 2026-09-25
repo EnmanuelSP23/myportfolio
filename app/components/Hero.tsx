@@ -27,7 +27,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed">
-            Welcome to my IT portfolio. I specialize in cloud infrastructure, system administration, cyber security, network architecture, and IT operations management. Empowering businesses through reliable technology and automated workflows.
+            Welcome to my IT portfolio. I specialize in programming, system administration, cyber security, troubleshooting, and IT operations management. Empowering businesses through reliable technology and automated workflows.
           </p>
 
           {/* Core Competency Tags */}
