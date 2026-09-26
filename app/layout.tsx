@@ -13,8 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Enmanuel Sanchez",
-  description: "IT Support & Web Developer Portfolio",
+  title: "Enmanuel Sanchez | IT Support & Cybersecurity Portfolio",
+  description:
+    "CompTIA Tech+ certified, A+ in progress. Projects in Next.js, Python, and automation — plus certifications, skills, and contact info.",
+  keywords: [
+    "Enmanuel Sanchez",
+    "IT support",
+    "help desk",
+    "cybersecurity",
+    "CompTIA Tech+",
+    "CompTIA A+",
+    "portfolio",
+    "Next.js",
+    "Python",
+  ],
+  openGraph: {
+    title: "Enmanuel Sanchez | IT Support & Cybersecurity Portfolio",
+    description:
+      "CompTIA Tech+ certified, A+ in progress. Projects in Next.js, Python, and automation — plus certifications, skills, and contact info.",
+    siteName: "Enmanuel.it",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Enmanuel Sanchez | IT Support & Cybersecurity Portfolio",
+    description:
+      "CompTIA Tech+ certified, A+ in progress. Projects in Next.js, Python, and automation — plus certifications, skills, and contact info.",
+  },
 };
 
 export default function RootLayout({

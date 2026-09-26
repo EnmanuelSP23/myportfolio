@@ -1,3 +1,5 @@
+import Certifications from "./Certifications";
+
 export default function About() {
   return (
     <section id="about" className="py-20 sm:py-28 px-6 sm:px-12 max-w-4xl mx-auto scroll-mt-16">
@@ -5,7 +7,8 @@ export default function About() {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
           About <span className="text-blue-600">Me</span>
         </h2>
-        <div className="space-y-4 text-gray-600 leading-relaxed">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-7 space-y-4 text-gray-600 leading-relaxed">
           <p>
             I began my career when I was 15 years old by helping 
             friends and neighbors with small IT problems. I transitioned 
@@ -27,13 +30,17 @@ export default function About() {
           <p>
             Currently working with HTML, Javascript, CSS, Python, Cybersecurity, Systems troubleshooting & Computer fixes.   
           </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {["Linux", "Windows Server", "AWS", "Azure", "Docker", "Kubernetes", "Python", "Bash", "Terraform", "Networking"].map((skill) => (
-            <span key={skill} className="px-3 py-1.5 rounded-md bg-white border border-gray-200 text-gray-700 text-sm font-mono">
-              {skill}
-            </span>
-          ))}
+          <div className="flex flex-wrap gap-3 pt-2">
+            {["Linux", "Windows", "Python", "JavaScript", "HTML & CSS", "Bash", "Cybersecurity", "Networking", "Troubleshooting"].map((skill) => (
+              <span key={skill} className="px-3 py-1.5 rounded-md bg-white border border-gray-200 text-gray-700 text-sm font-mono">
+                {skill}
+              </span>
+            ))}
+          </div>
+          </div>
+          <div className="lg:col-span-5">
+            <Certifications />
+          </div>
         </div>
       </div>
     </section>

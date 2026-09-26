@@ -36,6 +36,9 @@ export default function Navbar() {
           <a href="#about" className="block px-6 sm:px-0 py-3 sm:py-0" onClick={() => setOpen(false)}>About</a>
         </li>
         <li className="hover:text-blue-600 transition-colors border-b sm:border-0 border-gray-100">
+          <a href="#certifications" className="block px-6 sm:px-0 py-3 sm:py-0" onClick={() => setOpen(false)}>Certs</a>
+        </li>
+        <li className="hover:text-blue-600 transition-colors border-b sm:border-0 border-gray-100">
           <a href="#projects" className="block px-6 sm:px-0 py-3 sm:py-0" onClick={() => setOpen(false)}>Projects</a>
         </li>
         <li className="hover:text-blue-600 transition-colors">

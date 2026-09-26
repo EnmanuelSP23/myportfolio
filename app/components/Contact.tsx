@@ -6,27 +6,32 @@ export default function Contact() {
           Get In <span className="text-blue-600">Touch</span>
         </h2>
         <p className="text-gray-600 max-w-xl leading-relaxed">
-          Looking for an IT professional? Let&apos;s talk about your next project or infrastructure needs.
+          Open to IT support, help desk, and cybersecurity opportunities — or any project where I can keep learning. Let&apos;s talk.
         </p>
         <div className="space-y-4">
           <a
-            href="mailto:enmanuel@example.com"
+            href="mailto:enmanuelsanchezp23@gmail.com"
             className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all duration-200"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            enmanuel@example.com
+            enmanuelsanchezp23@gmail.com
           </a>
         </div>
         <div className="flex gap-4 pt-2">
-          {["GitHub", "LinkedIn", "Resume"].map((link) => (
+          {[
+            { label: "GitHub", href: "https://github.com/EnmanuelSP23", external: true },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/enmanuel-sanchez-pena-043976386/", external: true },
+            { label: "Resume", href: "/resume.pdf", external: true },
+          ].map((link) => (
             <a
-              key={link}
-              href="#"
+              key={link.label}
+              href={link.href}
+              {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
               className="text-sm text-gray-500 hover:text-blue-600 transition-colors font-mono"
             >
-              {link} →
+              {link.label} →
             </a>
           ))}
         </div>
